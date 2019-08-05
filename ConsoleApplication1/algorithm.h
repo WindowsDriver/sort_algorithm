@@ -88,7 +88,7 @@ void shellSort(T* arrayTest, int size)
 	}
 }
 
-
+/*归并排序第一种方式 start*/
 void merge_sort_recursive(int arr[], int reg[], int start, int end) {
 	if (start >= end)
 		return;
@@ -140,7 +140,7 @@ void merge_sort_recursive(int arr[], int reg[], int start, int end) {
 
 
 /*
-* 归并排序。递归版
+* 归并排序。递归版（第一种方式）
 * @param: {int []} arr
 * @param: {const int} len
 * @return null;
@@ -151,6 +151,10 @@ void mergeSort2(int arr[], const int len) {
 	delete[] reg;
 	reg = NULL;
 }
+/*归并排序第一种方式 end*/
+
+
+/*归并排序第二种方式 start*/
 
 //将有二个有序数列a[first...mid]和a[mid...last]合并
 void mergearray(int a[], int first, int mid, int last, int temp[])
@@ -204,3 +208,4 @@ bool mergSortFunction(int a[], int size)
 	return true;
 }
 
+/*归并排序第二种方式 end*/
